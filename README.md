@@ -1,22 +1,29 @@
 rasputty
 ========
-
 Connect on all your Raspberry Pi with one click (on windows)
 
 Extract the archive in the directory you want
 
-Click on ```discover.bat```
-
 Click on ```rasputty.bat```
 
-(You don't need to relaunch discover.bat for using rasputty.bat)
+Putty will launch after it have found your raspberry pi(s)
 
 What does theses scripts do ?
 ========
-discover.bat found all subnet (and assume your subnet are class C) and do a parralel fast ping on all IP address) resulting in
-the arp cache to be filled.
+rasputty.bat 
+* Launch ipconfig and search for all your IP address
+* Translate your IP to an (class C) subnet (it works with multiples IP addresses too)
+* Do a silent parralel fast ping of all IP address on your subnet(s) to fill your arp cache
+* Search your arp cache for Raspberry Pi MAC Address Signature
+* Launch Putty with the IP of your raspberry pi(s) as arguments
 
-rasputty.bat search the arp cache for Raspberry Pi MAC Address and launch putty with their ip address as arguments.
+RASPUTTY DOESN'T USE ANY EXTERNAL SOFTWARE FOR SCANNING YOUR NETWORK, it all works on unicorn and fairies dust magic.
+
+Localization issue
+====
+The scripts was test on Windows 7/8 in french/english , if nothing happens it is probably a localization problem.
+
+Please post, your ipconfig result in the issue so I can modify my script accordingly if it doesn't work.
 
 
 Licence
