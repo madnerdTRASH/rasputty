@@ -4,9 +4,10 @@ rasputty
 Connect on all your Raspberry Pi with one click (on windows)
 
 Extract the archive in the directory you want
-Launch discover.bat
 
-Launch Rasputty.bat
+Launch ```discover.bat```
+
+Launch ```Rasputty.bat```
 
 
 Licence
