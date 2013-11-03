@@ -1,6 +1,9 @@
-# How does it work
+# What is it ?
+Rasputty is a batch script to connect on all your Raspberry Pi with one click on Windows even if you don't know what the hell is an IP Address.
 
-Connect on all your Raspberry Pi with one click (on windows)
+The scripts was test on Windows 7/8 
+
+# Install
 
 Extract the archive in the directory you want
 
@@ -29,7 +32,7 @@ Script probably require Administrator Right even if it use only PING and ARP
 
 ## Localization issue (Script stop without doing anything)
 
-The scripts was test on Windows 7/8 in french/english , if nothing happens it is probably a localization problem.
+The scripts was test in french/english , if nothing happens it is probably a localization problem.
 
 Please post, your ipconfig result in the issue so I can modify my script accordingly if it doesn't work.
 
