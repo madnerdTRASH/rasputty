@@ -1,4 +1,4 @@
-=How does it work
+# How does it work
 
 Connect on all your Raspberry Pi with one click (on windows)
 
@@ -8,7 +8,7 @@ Click on ```rasputty.bat```
 
 Putty will launch after it have found your raspberry pi(s)
 
-=What does theses scripts do ?
+# What does theses scripts do ?
 
 rasputty.bat 
 * Launch ipconfig and search for all your IP address
@@ -19,15 +19,15 @@ rasputty.bat
 
 RASPUTTY DOESN'T USE ANY EXTERNAL SOFTWARE FOR SCANNING YOUR NETWORK, it all works on unicorn and fairies dust magic.
 
-==Issue
+## Issue
 
 
-==Administrator Right (Script stop and complain about command not found)
+## Administrator Right (Script stop and complain about command not found)
 
 Script probably require Administrator Right even if it use only PING and ARP
 
 
-==Localization issue (Script stop without doing anything)
+## Localization issue (Script stop without doing anything)
 
 The scripts was test on Windows 7/8 in french/english , if nothing happens it is probably a localization problem.
 
@@ -37,12 +37,12 @@ The problem will probably come from this line
 ```for /f "tokens=16" %%a in ('ipconfig ^|findstr "IPv4"')```
 Where tokens should be less or more (for example french version it is 16 and 14 in the english version (because of dots yes DOTS!)
 
-==I'm not using a class C IP Address
+## I'm not using a class C IP Address
 
 Complain in the issue section, maybe I do something about it.
 
 
-=Licence
+# Licence
 
 The PuTTY executables and source code are distributed under the MIT licence, which is similar in effect to the BSD licence. (This licence is Open Source certified and complies with the Debian Free Software Guidelines.)
 
