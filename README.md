@@ -5,9 +5,18 @@ Connect on all your Raspberry Pi with one click (on windows)
 
 Extract the archive in the directory you want
 
-Launch ```discover.bat```
+Click on ```discover.bat```
 
-Launch ```Rasputty.bat```
+Click on ```rasputty.bat```
+
+(You don't need to relaunch discover.bat for using rasputty.bat)
+
+What does theses scripts do ?
+========
+discover.bat found all subnet (and assume your subnet are class C) and do a parralel fast ping on all IP address) resulting in
+the arp cache to be filled.
+
+rasputty.bat search the arp cache for Raspberry Pi MAC Address and launch putty with their ip address as arguments.
 
 
 Licence
