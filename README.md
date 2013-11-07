@@ -29,17 +29,6 @@ RASPUTTY DOESN'T USE ANY EXTERNAL SOFTWARE FOR SCANNING YOUR NETWORK, it all wor
 
 Script probably require Administrator Right even if it use only PING and ARP
 
-
-## Localization issue (Script stop without doing anything)
-
-The scripts was test in french/english , if nothing happens it is probably a localization problem.
-
-Please post, your ipconfig result in the issue so I can modify my script accordingly if it doesn't work.
-
-The problem will probably come from this line
-```for /f "tokens=16" %%a in ('ipconfig ^|findstr "IPv4"')```
-Where tokens should be less or more (for example french version it is 16 and 14 in the english version (because of dots yes DOTS!)
-
 ## I'm not using a class C IP Address
 
 Complain in the issue section, maybe I do something about it.
